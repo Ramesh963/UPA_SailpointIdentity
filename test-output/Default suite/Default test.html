@@ -1,0 +1,1672 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 18 11:22:10 AEST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>781 seconds (781862 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU49, A888XU49, ALH<br/>
+<a href="#Output-2018260103" onClick='toggleBox("Output-2018260103", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2018260103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2018260103">
+UserID: A888XU49<br/>
+------------------<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;editForm:attributeContentA4J&quot;]/table/tbody/tr/td/table/tbody/tr[7]/td[2]/span&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;NCDWIN7PXD16316&apos;, ip: &apos;10.136.232.229&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\xrsh2\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: ee1d84a45e3ae17abbecb8bede1b1ae2
+*** Element info: {Using=xpath, value=//*[@id=&quot;editForm:attributeContentA4J&quot;]/table/tbody/tr/td/table/tbody/tr[7]/td[2]/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at com.upasailpoint.pages.AttributesPage.verifyTheEmployeeID(AttributesPage.java:73)
+	at com.upasailpoint.testcase.IdentityVerify.verifyTheData(IdentityVerify.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2018260103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2018260103'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;editForm:attributeContentA4J&quot;]/table/tbody/tr/td/table/tbody/tr[7]/td[2]/span&quot;}
+  (Session info: chrome=74.0.3729.131)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;NCDWIN7PXD16316&apos;, ip: &apos;10.136.232.229&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\xrsh2\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53217}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.131, webStorageEnabled: true}
+Session ID: ee1d84a45e3ae17abbecb8bede1b1ae2
+*** Element info: {Using=xpath, value=//*[@id=&quot;editForm:attributeContentA4J&quot;]/table/tbody/tr/td/table/tbody/tr[7]/td[2]/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at com.upasailpoint.pages.AttributesPage.verifyTheEmployeeID(AttributesPage.java:73)
+	at com.upasailpoint.testcase.IdentityVerify.verifyTheData(IdentityVerify.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>32</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU50, A888XU50, ALH<br/>
+<a href="#Output-270661321" onClick='toggleBox("Output-270661321", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-270661321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-270661321">
+UserID: A888XU50<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - NSW - Area 8<br/>
+Area_ID:20000111<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU50<br/>
+Employment Type:Salaried<br/>
+FT/PT Casual:Full-Time - Non EC<br/>
+First Name:AlhadFN50<br/>
+Hire Date:2019-11-07 00:00:00<br/>
+Human Resource:780976<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN50<br/>
+Line Manager:true<br/>
+Location:Village Green (3680)<br/>
+Location State:NT<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN50<br/>
+Ops/Sup:BWS - Store Support<br/>
+Ops/Sup_ID:13000004<br/>
+Paying Department:156<br/>
+Region:BWS - NSW<br/>
+Region_ID:17000054<br/>
+STATUS:Active<br/>
+State:NT<br/>
+Store:Eight Mile Plains East BWS (ALH)<br/>
+Store_ID:2096<br/>
+Time Zone:Australia/Brisbane<br/>
+Title:BWS Assist Store Manager<br/>
+Title_ID:P00222<br/>
+USERID:A888XU50<br/>
+Username:A888XU50<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU50<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN50 AlhadFN50<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:09:12<br/>
+displayName:AlhswowLN50 AlhadFN50<br/>
+distinguishedName:CN=AlhswowLN50 AlhadFN50,OU=BWS,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU50<br/>
+employeeType:Salaried<br/>
+givenName:AlhadFN50<br/>
+modifyTimeStamp:2019-07-18 11:09:12<br/>
+msDS-PrincipalName:NSWRO\A888XU50<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344935<br/>
+objectType:user<br/>
+objectguid:{6af057b2-f521-418b-bd23-78c7d8cde782}<br/>
+pwdLastSet:2019-07-17 13:09:13<br/>
+sAMAccountName:A888XU50<br/>
+sn:AlhswowLN50<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:BWS Assist Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:alhadfn50.alhswowln50@test.bws.com.au<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN50 AlhadFN50<br/>
+createTimeStamp:2019-07-18 11:09:13<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN50 AlhadFN50 - Google<br/>
+distinguishedName:CN=AlhswowLN50 AlhadFN50,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:alhadfn50.alhswowln50.test.bws.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN50<br/>
+mail:alhadfn50.alhswowln50@test.bws.com.au<br/>
+modifyTimeStamp:2019-07-18 11:09:13<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{f8645cd9-6dfc-432e-9de0-8fcd752ae525}<br/>
+sn:AlhswowLN50<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"null null","locality":"NT","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA75090917642<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU50<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU50<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU50<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU50<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"alhadfn50.alhswowln50@test.bws.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU50","type":"organization"}<br/>
+familyName:AlhswowLN50<br/>
+fullName:AlhadFN50 AlhswowLN50<br/>
+givenName:AlhadFN50<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN50","givenName":"AlhadFN50"}<br/>
+objectID:101436525522263448985<br/>
+orgUnitPath:/BWS/CorePlus<br/>
+organizations:{"name":"ALH","title":"BWS Assist Store Manager","primary":true,"customType":"work","department":"BWS","location":"Eight Mile Plains East BWS (ALH)"}<br/>
+primaryEmail:alhadfn50.alhswowln50@test.bws.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:alhadfn50.alhswowln50@test.bws.com.au<br/>
+employee_number:A888XU50<br/>
+first_name:AlhadFN50<br/>
+last_name:AlhswowLN50<br/>
+locked_out:false<br/>
+name:AlhadFN50 AlhswowLN50<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:09 AM<br/>
+sys_domain:global<br/>
+sys_id:472077c0dbfa7b806f26cae43a9619b7<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:09 AM<br/>
+title:BWS Assist Store Manager<br/>
+u_enterprise_identity_id:AA75090917642<br/>
+u_enterprise_logon_id:A888XU50<br/>
+u_start_date:07-11-2019<br/>
+u_type:Employee<br/>
+user_name:A888XU50<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>86</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU51, A888XU51, ALH<br/>
+<a href="#Output-1755634886" onClick='toggleBox("Output-1755634886", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1755634886" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1755634886">
+UserID: A888XU51<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - QLD - Area 1<br/>
+Area_ID:20000114<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU51<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Part-Time - Non EC<br/>
+First Name:AlhadFN51<br/>
+Hire Date:2019-12-09 00:00:00<br/>
+Human Resource:870792<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN51<br/>
+Line Manager:false<br/>
+Location:Village Tavern (5791)<br/>
+Location State:QLD<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN51<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - QLD<br/>
+Region_ID:17000055<br/>
+STATUS:Active<br/>
+State:QLD<br/>
+Store:Beverley BWS (TAV)<br/>
+Store_ID:5782<br/>
+Time Zone:Australia/Darwin<br/>
+Title:BWS Sales Assistant<br/>
+Title_ID:P00035<br/>
+USERID:A888XU51<br/>
+Username:A888XU51<br/>
+in EC:2<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU52, A888XU52, ALH<br/>
+<a href="#Output-883087072" onClick='toggleBox("Output-883087072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-883087072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-883087072">
+UserID: A888XU52<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Address 1:Others<br/>
+Address 2:Others<br/>
+Area:BWS - QLD<br/>
+Area_ID:20000113<br/>
+Business Fax:Others<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+City:Others<br/>
+Country:Australia<br/>
+Custom Manager:Others<br/>
+Customizable Field 13:Others<br/>
+Customizable Field 14:Others<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU52<br/>
+Employment Type:Salaried<br/>
+FT/PT Casual:Casual - Non EC<br/>
+First Name:AlhadFN52<br/>
+HR Level:Others<br/>
+Hire Date:2019-02-04 00:00:00<br/>
+Human Resource:876567<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN52<br/>
+Last Review Date:Others<br/>
+Line Manager:true<br/>
+Location:Waltzing Matilda (3688)<br/>
+Location State:SA<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN52<br/>
+Ops/Sup:BWS - Store Support<br/>
+Ops/Sup_ID:13000004<br/>
+Paying Department:156<br/>
+Region:BWS - SA<br/>
+Region_ID:17000056<br/>
+Review Frequency:Others<br/>
+STATUS:Active<br/>
+Second Manager:Others<br/>
+State:SA<br/>
+Store:Eli Waters BWS (ALH) DBS<br/>
+Store_ID:2720<br/>
+Time Zone:Australia/Hobart<br/>
+Title:BWS Store Manager<br/>
+Title_ID:P06518<br/>
+USERID:A888XU52<br/>
+Username:A888XU52<br/>
+ZIP:Others<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN52 AlhadFN52<br/>
+createTimeStamp:2019-07-18 11:09:20<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN52 AlhadFN52 - Google<br/>
+distinguishedName:CN=AlhswowLN52 AlhadFN52,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:alhadfn52.alhswowln52.test.bws.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN52<br/>
+mail:alhadfn52.alhswowln52@test.bws.com.au<br/>
+modifyTimeStamp:2019-07-18 11:09:20<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{7db0d53b-f2db-46cb-b55b-b2719962cd04}<br/>
+sn:AlhswowLN52<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU52<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN52 AlhadFN52<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:09:19<br/>
+displayName:AlhswowLN52 AlhadFN52<br/>
+distinguishedName:CN=AlhswowLN52 AlhadFN52,OU=BWS,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU52<br/>
+employeeType:Salaried<br/>
+givenName:AlhadFN52<br/>
+modifyTimeStamp:2019-07-18 11:09:19<br/>
+msDS-PrincipalName:NSWRO\A888XU52<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344936<br/>
+objectType:user<br/>
+objectguid:{671349d1-8e3a-41e3-8eb7-0173b90c53e8}<br/>
+pwdLastSet:2019-07-17 13:09:20<br/>
+sAMAccountName:A888XU52<br/>
+sn:AlhswowLN52<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:BWS Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:alhadfn52.alhswowln52@test.bws.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"Others Others","locality":"SA","region":"Others","postalCode":"Others","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA93944388303<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU52<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU52<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU52<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU52<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"alhadfn52.alhswowln52@test.bws.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU52","type":"organization"}<br/>
+familyName:AlhswowLN52<br/>
+fullName:AlhadFN52 AlhswowLN52<br/>
+givenName:AlhadFN52<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN52","givenName":"AlhadFN52"}<br/>
+objectID:103450521026744016702<br/>
+orgUnitPath:/BWS/CorePlus<br/>
+organizations:{"name":"ALH","title":"BWS Store Manager","primary":true,"customType":"work","department":"BWS","location":"Eli Waters BWS (ALH) DBS"}<br/>
+primaryEmail:alhadfn52.alhswowln52@test.bws.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:alhadfn52.alhswowln52@test.bws.com.au<br/>
+employee_number:A888XU52<br/>
+first_name:AlhadFN52<br/>
+last_name:AlhswowLN52<br/>
+locked_out:false<br/>
+name:AlhadFN52 AlhswowLN52<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+street:Others<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:09 AM<br/>
+sys_domain:global<br/>
+sys_id:77307b08db7a37c01d214815059619a7<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:09 AM<br/>
+title:BWS Store Manager<br/>
+u_enterprise_identity_id:AA93944388303<br/>
+u_enterprise_logon_id:A888XU52<br/>
+u_fax:Others<br/>
+u_start_date:04-02-2019<br/>
+u_street_2:Others<br/>
+u_type:Employee<br/>
+user_name:A888XU52<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>90</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU53, A888XU53, ALH<br/>
+<a href="#Output-316671934" onClick='toggleBox("Output-316671934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316671934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316671934">
+UserID: A888XU53<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - SA - Area 1<br/>
+Area_ID:20000121<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU53<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Full-Time - Non EC<br/>
+First Name:AlhadFN53<br/>
+Hire Date:2020-02-08 00:00:00<br/>
+Human Resource:1027040<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN53<br/>
+Line Manager:false<br/>
+Location:Wanneroo Villa (4134)<br/>
+Location State:TAS<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN53<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - Store Support<br/>
+Region_ID:17000057<br/>
+STATUS:Active<br/>
+State:TAS<br/>
+Store:Nerang DM_ALH<br/>
+Store_ID:2419<br/>
+Time Zone:Australia/Melbourne<br/>
+Title:BWS Trainee Manager<br/>
+Title_ID:P08461<br/>
+USERID:A888XU53<br/>
+Username:A888XU53<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:alhadfn53.alhswowln53@test.bws.com.au<br/>
+employee_number:A888XU53<br/>
+first_name:AlhadFN53<br/>
+last_name:AlhswowLN53<br/>
+locked_out:false<br/>
+name:AlhadFN53 AlhswowLN53<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:09 AM<br/>
+sys_domain:global<br/>
+sys_id:9b2077c0dbfa7b806f26cae43a9619be<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:09 AM<br/>
+title:BWS Trainee Manager<br/>
+u_enterprise_identity_id:AA79720551041<br/>
+u_enterprise_logon_id:A888XU53<br/>
+u_start_date:08-02-2020<br/>
+u_type:Employee<br/>
+user_name:A888XU53<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU54, A888XU54, ALH<br/>
+<a href="#Output-1322359657" onClick='toggleBox("Output-1322359657", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1322359657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1322359657">
+UserID: A888XU54<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - Store Support<br/>
+Area_ID:20000124<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU54<br/>
+Employment Type:Salaried<br/>
+FT/PT Casual:Part-Time - Non EC<br/>
+First Name:AlhadFN54<br/>
+Hire Date:2019-12-07 00:00:00<br/>
+Human Resource:1031649<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN54<br/>
+Line Manager:true<br/>
+Location:Warner Tavern (2387)<br/>
+Location State:VIC<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN54<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - Store Support<br/>
+Region_ID:17000057<br/>
+STATUS:Active<br/>
+State:VIC<br/>
+Store:Kirwan Tavern (ALH)Drive In<br/>
+Store_ID:2463<br/>
+Time Zone:Australia/Perth<br/>
+Title:Workcover<br/>
+Title_ID:P18162<br/>
+USERID:A888XU54<br/>
+Username:A888XU54<br/>
+in EC:2<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU55, A888XU55, ALH<br/>
+<a href="#Output-1037463541" onClick='toggleBox("Output-1037463541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1037463541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1037463541">
+UserID: A888XU55<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - VIC - Area 2<br/>
+Area_ID:20000128<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:BWS<br/>
+Division_ID:11000001<br/>
+Employee Id:A888XU55<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Casual - Non EC<br/>
+First Name:AlhadFN55<br/>
+Hire Date:2020-07-06 00:00:00<br/>
+Human Resource:1061409<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN55<br/>
+Line Manager:false<br/>
+Location:Warner Tavern (2940)<br/>
+Location State:WA<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN55<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - Store Support<br/>
+Region_ID:17000057<br/>
+STATUS:Active<br/>
+State:WA<br/>
+Store:Annerley BWS (ALH)<br/>
+Store_ID:2100<br/>
+Time Zone:Australia/Sydney<br/>
+Title:Retail Relief Area Mgr<br/>
+Title_ID:P00014<br/>
+USERID:A888XU55<br/>
+Username:A888XU55<br/>
+in EC:2<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU56, A888XU56, ALH<br/>
+<a href="#Output-414551159" onClick='toggleBox("Output-414551159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-414551159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-414551159">
+UserID: A888XU56<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:Dan Murphy's - NSW - Area 2<br/>
+Area_ID:20000173<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:Dan Murphy's<br/>
+Division_ID:11000004<br/>
+Employee Id:A888XU56<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Part-Time - Non EC<br/>
+First Name:AlhadFN56<br/>
+Hire Date:2019-11-07 00:00:00<br/>
+Human Resource:677971<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN56<br/>
+Line Manager:false<br/>
+Location:Wheelers Hill (3689)<br/>
+Location State:NT<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN56<br/>
+Ops/Sup:Dan Murphy's - Store Operations<br/>
+Ops/Sup_ID:13000009<br/>
+Paying Department:156<br/>
+Region:Dan Murphy's - NSW<br/>
+Region_ID:17000075<br/>
+STATUS:Active<br/>
+State:NT<br/>
+Store:Nerang BWS (ALH) Pacific Pines (DBS)<br/>
+Store_ID:2391<br/>
+Time Zone:Australia/Brisbane<br/>
+Title:DM Store Manager<br/>
+Title_ID:P11637<br/>
+USERID:A888XU56<br/>
+Username:A888XU56<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN56 AlhadFN56<br/>
+createTimeStamp:2019-07-17 10:20:00<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN56 AlhadFN56 - Google<br/>
+distinguishedName:CN=AlhswowLN56 AlhadFN56,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:aalhswowln561.test.woolworths.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN56<br/>
+mail:aalhswowln561@test.woolworths.com.au<br/>
+modifyTimeStamp:2019-07-17 10:20:00<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{829376a2-3ecc-4d83-afc1-04a19e1ef50e}<br/>
+sn:AlhswowLN56<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU56<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN56 AlhadFN56<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-17 10:19:59<br/>
+displayName:AlhswowLN56 AlhadFN56<br/>
+distinguishedName:CN=AlhswowLN56 AlhadFN56,OU=DanMurphys,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU56<br/>
+employeeType:EBA/Wage<br/>
+givenName:AlhadFN56<br/>
+modifyTimeStamp:2019-07-17 11:09:16<br/>
+msDS-PrincipalName:NSWRO\A888XU56<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344908<br/>
+objectType:user<br/>
+objectguid:{02c19aa7-44d8-4ef0-9f60-8a8ea5b62867}<br/>
+pwdLastSet:2019-07-17 00:20:00<br/>
+sAMAccountName:A888XU56<br/>
+sn:AlhswowLN56<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:DM Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:aalhswowln561@test.woolworths.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"null null","locality":"NT","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA16418883078<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU56<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU56<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU56<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU56<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"aalhswowln561@test.woolworths.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU56","type":"organization"}<br/>
+familyName:AlhswowLN56<br/>
+fullName:AlhadFN56 AlhswowLN56<br/>
+givenName:AlhadFN56<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN56","givenName":"AlhadFN56"}<br/>
+objectID:100084362099922659208<br/>
+orgUnitPath:/DanMurphy/CorePlus<br/>
+organizations:{"name":"ALH","title":"DM Store Manager","primary":true,"customType":"work","department":"Dan Murphy\u0027s","location":"Nerang BWS (ALH) Pacific Pines (DBS)"}<br/>
+primaryEmail:aalhswowln561@test.woolworths.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:aalhswowln561@test.woolworths.com.au<br/>
+employee_number:A888XU56<br/>
+first_name:AlhadFN56<br/>
+last_name:AlhswowLN56<br/>
+locked_out:false<br/>
+name:AlhadFN56 AlhswowLN56<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:17-07-2019 10:20 AM<br/>
+sys_domain:global<br/>
+sys_id:c75b96fbdb62b3c01d214815059619d4<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:17-07-2019 10:20 AM<br/>
+title:DM Store Manager<br/>
+u_enterprise_identity_id:AA16418883078<br/>
+u_enterprise_logon_id:A888XU56<br/>
+u_start_date:07-11-2019<br/>
+u_type:Employee<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>84</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU57, A888XU57, ALH<br/>
+<a href="#Output-340234965" onClick='toggleBox("Output-340234965", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340234965" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340234965">
+UserID: A888XU57<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:Dan Murphy's - NSW - Area 2<br/>
+Area_ID:20000173<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:Dan Murphy's<br/>
+Division_ID:11000004<br/>
+Employee Id:A888XU57<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Part-Time - Non EC<br/>
+First Name:AlhadFN57<br/>
+Hire Date:2019-11-07 00:00:00<br/>
+Human Resource:677971<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN57<br/>
+Line Manager:false<br/>
+Location:Wheelers Hill (3689)<br/>
+Location State:NT<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN57<br/>
+Ops/Sup:Dan Murphy's - Store Operations<br/>
+Ops/Sup_ID:13000009<br/>
+Paying Department:156<br/>
+Region:Dan Murphy's - NSW<br/>
+Region_ID:17000075<br/>
+STATUS:Active<br/>
+State:NT<br/>
+Store:Mulgrave DM_ALH<br/>
+Store_ID:3446<br/>
+Time Zone:Australia/Brisbane<br/>
+Title:DM Store Manager<br/>
+Title_ID:P11637<br/>
+USERID:A888XU57<br/>
+Username:A888XU57<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN57 AlhadFN57<br/>
+createTimeStamp:2019-07-18 11:09:57<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN57 AlhadFN57 - Google<br/>
+distinguishedName:CN=AlhswowLN57 AlhadFN57,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:aalhswowln57.test.woolworths.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN57<br/>
+mail:aalhswowln57@test.woolworths.com.au<br/>
+modifyTimeStamp:2019-07-18 11:09:57<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{b03b583f-7d03-4fdb-a405-7114018c3de3}<br/>
+sn:AlhswowLN57<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU57<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN57 AlhadFN57<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:09:56<br/>
+displayName:AlhswowLN57 AlhadFN57<br/>
+distinguishedName:CN=AlhswowLN57 AlhadFN57,OU=DanMurphys,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU57<br/>
+employeeType:EBA/Wage<br/>
+givenName:AlhadFN57<br/>
+modifyTimeStamp:2019-07-18 11:09:56<br/>
+msDS-PrincipalName:NSWRO\A888XU57<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344937<br/>
+objectType:user<br/>
+objectguid:{c5b4f5a6-500b-4720-9192-e70e5049c1dd}<br/>
+pwdLastSet:2019-07-17 13:09:57<br/>
+sAMAccountName:A888XU57<br/>
+sn:AlhswowLN57<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:DM Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:aalhswowln57@test.woolworths.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"null null","locality":"NT","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA36382668095<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU57<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU57<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU57<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU57<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"aalhswowln57@test.woolworths.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU57","type":"organization"}<br/>
+familyName:AlhswowLN57<br/>
+fullName:AlhadFN57 AlhswowLN57<br/>
+givenName:AlhadFN57<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN57","givenName":"AlhadFN57"}<br/>
+objectID:116982465790859885856<br/>
+orgUnitPath:/DanMurphy/CorePlus<br/>
+organizations:{"name":"ALH","title":"DM Store Manager","primary":true,"customType":"work","department":"Dan Murphy\u0027s","location":"Mulgrave DM_ALH"}<br/>
+primaryEmail:aalhswowln57@test.woolworths.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:aalhswowln57@test.woolworths.com.au<br/>
+employee_number:A888XU57<br/>
+first_name:AlhadFN57<br/>
+last_name:AlhswowLN57<br/>
+locked_out:false<br/>
+name:AlhadFN57 AlhswowLN57<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:10 AM<br/>
+sys_domain:global<br/>
+sys_id:38603f08db7a37c01d21481505961977<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:10 AM<br/>
+title:DM Store Manager<br/>
+u_enterprise_identity_id:AA36382668095<br/>
+u_enterprise_logon_id:A888XU57<br/>
+u_start_date:07-11-2019<br/>
+u_type:Employee<br/>
+user_name:A888XU57<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>85</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU58, A888XU58, ALH<br/>
+<a href="#Output-1396297158" onClick='toggleBox("Output-1396297158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1396297158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1396297158">
+UserID: A888XU58<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:Masters - NSW - Area 2<br/>
+Area_ID:20000815<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:Woolworths Liquor Group<br/>
+Division_ID:11000020<br/>
+Employee Id:A888XU58<br/>
+Employment Type:Salaried<br/>
+FT/PT Casual:Full-Time - Non EC<br/>
+First Name:AlhadFN58<br/>
+Hire Date:2019-12-07 00:00:00<br/>
+Human Resource:876567<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN58<br/>
+Line Manager:true<br/>
+Location:Albion Hotel (4407)<br/>
+Location State:VIC<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN58<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - SA<br/>
+Region_ID:17000056<br/>
+STATUS:Active<br/>
+State:VIC<br/>
+Store:Capalaba DTh (MGW)<br/>
+Store_ID:2805<br/>
+Time Zone:Australia/Perth<br/>
+Title:BWS Store Manager<br/>
+Title_ID:P06563<br/>
+USERID:A888XU58<br/>
+Username:A888XU58<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN58 AlhadFN58<br/>
+createTimeStamp:2019-07-18 11:09:58<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN58 AlhadFN58 - Google<br/>
+distinguishedName:CN=AlhswowLN58 AlhadFN58,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:aalhswowln58.test.woolworths.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN58<br/>
+mail:aalhswowln58@test.woolworths.com.au<br/>
+modifyTimeStamp:2019-07-18 11:09:58<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{a2710b28-ddf4-4f8c-8c6c-b5a2fe39455d}<br/>
+sn:AlhswowLN58<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU58<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN58 AlhadFN58<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:09:57<br/>
+displayName:AlhswowLN58 AlhadFN58<br/>
+distinguishedName:CN=AlhswowLN58 AlhadFN58,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU58<br/>
+employeeType:Salaried<br/>
+givenName:AlhadFN58<br/>
+modifyTimeStamp:2019-07-18 11:09:57<br/>
+msDS-PrincipalName:NSWRO\A888XU58<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344938<br/>
+objectType:user<br/>
+objectguid:{ce613daa-d3d3-4e5c-b12e-ca9d55620690}<br/>
+pwdLastSet:2019-07-17 13:09:58<br/>
+sAMAccountName:A888XU58<br/>
+sn:AlhswowLN58<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:BWS Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:aalhswowln58@test.woolworths.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"null null","locality":"VIC","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA58816964867<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU58<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU58<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU58<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU58<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"aalhswowln58@test.woolworths.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU58","type":"organization"}<br/>
+familyName:AlhswowLN58<br/>
+fullName:AlhadFN58 AlhswowLN58<br/>
+givenName:AlhadFN58<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN58","givenName":"AlhadFN58"}<br/>
+objectID:114812986213995767403<br/>
+orgUnitPath:/Woolworths/CorePlus<br/>
+organizations:{"name":"ALH","title":"BWS Store Manager","primary":true,"customType":"work","department":"Woolworths Liquor Group","location":"Capalaba DTh (MGW)"}<br/>
+primaryEmail:aalhswowln58@test.woolworths.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:aalhswowln58@test.woolworths.com.au<br/>
+employee_number:A888XU58<br/>
+first_name:AlhadFN58<br/>
+last_name:AlhswowLN58<br/>
+locked_out:false<br/>
+name:AlhadFN58 AlhswowLN58<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:10 AM<br/>
+sys_domain:global<br/>
+sys_id:05607bc0dbfa7b806f26cae43a961966<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:10 AM<br/>
+title:BWS Store Manager<br/>
+u_enterprise_identity_id:AA58816964867<br/>
+u_enterprise_logon_id:A888XU58<br/>
+u_start_date:07-12-2019<br/>
+u_type:Employee<br/>
+user_name:A888XU58<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>83</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU59, A888XU59, ALH<br/>
+<a href="#Output-2014846847" onClick='toggleBox("Output-2014846847", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2014846847" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2014846847">
+UserID: A888XU59<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Area:BWS - QLD - Area 5<br/>
+Area_ID:20000118<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+Country:Australia<br/>
+Default Locale:en_GB<br/>
+Division:ALH Group<br/>
+Division_ID:11000015<br/>
+Employee Id:A888XU59<br/>
+Employment Type:EBA/Wage<br/>
+FT/PT Casual:Casual - Non EC<br/>
+First Name:AlhadFN59<br/>
+Hire Date:2019-11-07 00:00:00<br/>
+Human Resource:677971<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN59<br/>
+Line Manager:false<br/>
+Location:Villa Noosa Hotel/Motel (2798)<br/>
+Location State:NSW<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN59<br/>
+Ops/Sup:BWS - Store Operations<br/>
+Ops/Sup_ID:13000003<br/>
+Paying Department:156<br/>
+Region:BWS - Buying Group<br/>
+Region_ID:17000051<br/>
+STATUS:Active<br/>
+State:NSW<br/>
+Store:Fairy Meadow Charle Htl BWS (ALH) CLOSED<br/>
+Store_ID:1975<br/>
+Time Zone:Australia/Adelaide<br/>
+Title:BWS Store Manager<br/>
+Title_ID:P17763<br/>
+USERID:A888XU59<br/>
+Username:A888XU59<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN59 AlhadFN59<br/>
+createTimeStamp:2019-07-18 11:10:12<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN59 AlhadFN59 - Google<br/>
+distinguishedName:CN=AlhswowLN59 AlhadFN59,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:aalhswowln59.test.woolworths.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN59<br/>
+mail:aalhswowln59@test.woolworths.com.au<br/>
+modifyTimeStamp:2019-07-18 11:10:12<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{c3957ef5-0f03-4f78-a82a-3c919f9c8bee}<br/>
+sn:AlhswowLN59<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU59<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN59 AlhadFN59<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:10:11<br/>
+displayName:AlhswowLN59 AlhadFN59<br/>
+distinguishedName:CN=AlhswowLN59 AlhadFN59,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU59<br/>
+employeeType:EBA/Wage<br/>
+givenName:AlhadFN59<br/>
+modifyTimeStamp:2019-07-18 11:10:11<br/>
+msDS-PrincipalName:NSWRO\A888XU59<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344939<br/>
+objectType:user<br/>
+objectguid:{acd1dc0a-1168-477c-b8ad-13963e6eba0b}<br/>
+pwdLastSet:2019-07-17 13:10:12<br/>
+sAMAccountName:A888XU59<br/>
+sn:AlhswowLN59<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:BWS Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:aalhswowln59@test.woolworths.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"null null","locality":"NSW","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA04041592487<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU59<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU59<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU59<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU59<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"aalhswowln59@test.woolworths.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU59","type":"organization"}<br/>
+familyName:AlhswowLN59<br/>
+fullName:AlhadFN59 AlhswowLN59<br/>
+givenName:AlhadFN59<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN59","givenName":"AlhadFN59"}<br/>
+objectID:102496921407613369948<br/>
+orgUnitPath:/Woolworths/CorePlus<br/>
+organizations:{"name":"ALH","title":"BWS Store Manager","primary":true,"customType":"work","department":"ALH Group","location":"Fairy Meadow Charle Htl BWS (ALH) CLOSED"}<br/>
+primaryEmail:aalhswowln59@test.woolworths.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:aalhswowln59@test.woolworths.com.au<br/>
+employee_number:A888XU59<br/>
+first_name:AlhadFN59<br/>
+last_name:AlhswowLN59<br/>
+locked_out:false<br/>
+name:AlhadFN59 AlhswowLN59<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:10 AM<br/>
+sys_domain:global<br/>
+sys_id:73607bc0dbfa7b806f26cae43a96196e<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:10 AM<br/>
+title:BWS Store Manager<br/>
+u_enterprise_identity_id:AA04041592487<br/>
+u_enterprise_logon_id:A888XU59<br/>
+u_start_date:07-11-2019<br/>
+u_type:Employee<br/>
+user_name:A888XU59<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>84</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU60, A888XU60, ALH<br/>
+<a href="#Output-2037471284" onClick='toggleBox("Output-2037471284", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2037471284" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2037471284">
+UserID: A888XU60<br/>
+------------------<br/>
+-----------------------------------------------------------------<br/>
+ALH<br/>
+-----------------------------------------------------------------<br/>
+Address 1:Others<br/>
+Address 2:Others<br/>
+Area:GM BWS Operations<br/>
+Area_ID:20000234<br/>
+Career Group:Retail Operations<br/>
+Career Level:Team Member (1001)<br/>
+Career Stream:Retail - Operations<br/>
+City:Others<br/>
+Country:Australia<br/>
+Custom Manager:Others<br/>
+Customizable Field 13:Others<br/>
+Customizable Field 14:Others<br/>
+Default Locale:en_GB<br/>
+Division:Woolworths Liquor Group<br/>
+Division_ID:11000020<br/>
+Employee Id:A888XU60<br/>
+Employment Type:Salaried<br/>
+FT/PT Casual:Casual - Non EC<br/>
+First Name:AlhadFN60<br/>
+HR Level:Others<br/>
+Hire Date:2021-01-07 00:00:00<br/>
+Human Resource:876567<br/>
+Job Code:Team Member (30001802)<br/>
+Last Name:AlhswowLN60<br/>
+Last Review Date:Others<br/>
+Line Manager:true<br/>
+Location:Alexandra Headlands (2346)<br/>
+Location State:WA<br/>
+Manager:595370<br/>
+Middle Name:AlhgleMN60<br/>
+Ops/Sup:WLG - Store Support<br/>
+Ops/Sup_ID:13000028<br/>
+Paying Department:156<br/>
+Region:GM BWS Operations<br/>
+Region_ID:17000095<br/>
+Review Frequency:Others<br/>
+STATUS:Active<br/>
+Second Manager:Others<br/>
+State:WA<br/>
+Store:Innaloo BWS (ALH)<br/>
+Store_ID:4146<br/>
+Time Zone:Australia/Sydney<br/>
+Title:BWS Store Manager<br/>
+Title_ID:P02467<br/>
+USERID:A888XU60<br/>
+Username:A888XU60<br/>
+ZIP:Others<br/>
+in EC:2<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+cn:AlhswowLN60 AlhadFN60<br/>
+createTimeStamp:2019-07-18 11:10:35<br/>
+description:Google Email Forward<br/>
+displayName:AlhswowLN60 AlhadFN60 - Google<br/>
+distinguishedName:CN=AlhswowLN60 AlhadFN60,OU=Google Users,OU=Contacts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+externalEmailAddress:aalhswowln60.test.woolworths.com.au@gapps2.woolworths.com.au<br/>
+givenName:AlhadFN60<br/>
+mail:aalhswowln60@test.woolworths.com.au<br/>
+modifyTimeStamp:2019-07-18 11:10:35<br/>
+msExchHideFromAddressLists:true<br/>
+objectClass:contact
+organizationalPerson
+person
+top<br/>
+objectType:contact<br/>
+objectguid:{9be34d80-696b-49fc-9faa-62046cd7aa80}<br/>
+sn:AlhswowLN60<br/>
+-----------------------------------------------------------------<br/>
+Active Directory - CORP.DIR Forest<br/>
+-----------------------------------------------------------------<br/>
+CorrelationKey:A888XU60<br/>
+Must change password on logon:No<br/>
+Password Never Expires:No<br/>
+accountExpires:never<br/>
+accountFlags:Normal User Account<br/>
+cn:AlhswowLN60 AlhadFN60<br/>
+company:Woolworths Group<br/>
+createTimeStamp:2019-07-18 11:10:34<br/>
+displayName:AlhswowLN60 AlhadFN60<br/>
+distinguishedName:CN=AlhswowLN60 AlhadFN60,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br/>
+employeeID:A888XU60<br/>
+employeeType:Salaried<br/>
+givenName:AlhadFN60<br/>
+modifyTimeStamp:2019-07-18 11:10:34<br/>
+msDS-PrincipalName:NSWRO\A888XU60<br/>
+msNPAllowDialin:Not Set<br/>
+objectClass:organizationalPerson
+person
+top
+user<br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344940<br/>
+objectType:user<br/>
+objectguid:{2962f6b0-6caf-4998-b971-282a9fb6108a}<br/>
+pwdLastSet:2019-07-17 13:10:35<br/>
+sAMAccountName:A888XU60<br/>
+sn:AlhswowLN60<br/>
+st:UNKNOWN<br/>
+street:SyncToAzureAD<br/>
+title:BWS Store Manager<br/>
+userAccountControl:512<br/>
+userPrincipalName:aalhswowln60@test.woolworths.com.au<br/>
+-----------------------------------------------------------------<br/>
+Google Apps<br/>
+-----------------------------------------------------------------<br/>
+addresses:{"type":"work","streetAddress":"Others Others","locality":"WA","region":"Others","postalCode":"Others","country":"Australia","primary":true}<br/>
+changePasswordAtNextLogin:true<br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br/>
+customSchemas.IIQ_Test.entid:AA26098899221<br/>
+customSchemas.IIQ_Test.entlogonid:A888XU60<br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:156<br/>
+customSchemas.WOWCustomSchema.ADID:A888XU60<br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:A888XU60<br/>
+customSchemas.WOWCustomSchema.SAPID:A888XU60<br/>
+customerId:C032u2mae<br/>
+emails:{"address":"aalhswowln60@test.woolworths.com.au","primary":true}<br/>
+externalIds:{"value":"A888XU60","type":"organization"}<br/>
+familyName:AlhswowLN60<br/>
+fullName:AlhadFN60 AlhswowLN60<br/>
+givenName:AlhadFN60<br/>
+includeInGlobalAddressList:true<br/>
+ipWhitelisted:false<br/>
+isAdmin:false<br/>
+isDelegatedAdmin:false<br/>
+isMailboxSetup:true<br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br/>
+name:{"familyName":"AlhswowLN60","givenName":"AlhadFN60"}<br/>
+objectID:110867854394130871003<br/>
+orgUnitPath:/Woolworths/CorePlus<br/>
+organizations:{"name":"ALH","title":"BWS Store Manager","primary":true,"customType":"work","department":"Woolworths Liquor Group","location":"Innaloo BWS (ALH)"}<br/>
+primaryEmail:aalhswowln60@test.woolworths.com.au<br/>
+suspended:false<br/>
+-----------------------------------------------------------------<br/>
+ServiceWoW<br/>
+-----------------------------------------------------------------<br/>
+AccountAccess:Active<br/>
+active:true<br/>
+calendar_integration:Outlook<br/>
+company:ALH<br/>
+email:aalhswowln60@test.woolworths.com.au<br/>
+employee_number:A888XU60<br/>
+first_name:AlhadFN60<br/>
+last_name:AlhswowLN60<br/>
+locked_out:false<br/>
+name:AlhadFN60 AlhswowLN60<br/>
+notification:Enable<br/>
+password_needs_reset:false<br/>
+source:Sailpoint<br/>
+street:Others<br/>
+sys_class_name:User<br/>
+sys_created_by:upa.provisioning<br/>
+sys_created_on:18-07-2019 11:10 AM<br/>
+sys_domain:global<br/>
+sys_id:ce807b48db7a37c01d214815059619aa<br/>
+sys_mod_count:0<br/>
+sys_updated_by:upa.provisioning<br/>
+sys_updated_on:18-07-2019 11:10 AM<br/>
+title:BWS Store Manager<br/>
+u_enterprise_identity_id:AA26098899221<br/>
+u_enterprise_logon_id:A888XU60<br/>
+u_start_date:07-01-2021<br/>
+u_street_2:Others<br/>
+u_type:Employee<br/>
+user_name:A888XU60<br/>
+vip:false<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>com.upasailpoint.testcase.IdentityVerify@4cf777e8</td></tr>
+</table><p>
+</body>
+</html>

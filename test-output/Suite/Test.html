@@ -1,0 +1,691 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jul 12 11:15:49 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>304 seconds (304994 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: AAR9, AAR9, SuccessFactors<br/>
+<a href="#Output-524223214" onClick='toggleBox("Output-524223214", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-524223214" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-524223214">
+UserID: AAR9<br><br/>
+------------------<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+cn:AutoAccess9 Auto9<br><br/>
+createTimeStamp:20190711122036.0Z<br><br/>
+description:Google Email Forward<br><br/>
+displayName:AutoAccess9 Auto9 - Google<br><br/>
+distinguishedName:CN=AutoAccess9 Auto9,OU=H3794_UAT_Accounts,OU=Accounts,DC=bigwcorp,DC=com,DC=au<br><br/>
+externalEmailAddress:aauto9.test.bigw.com.au@gapps2.woolworths.com.au<br><br/>
+givenName:AutoAccess9<br><br/>
+mail:aauto9@test.bigw.com.au<br><br/>
+modifyTimeStamp:20190711122036.0Z<br><br/>
+objectClass:contact
+organizationalPerson
+person
+top<br><br/>
+objectType:contact<br><br/>
+objectguid:{3d4fc322-9926-4de5-8dc5-863fb516f3e7}<br><br/>
+sn:Auto9<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+accountExpires:never<br><br/>
+accountFlags:Normal User Account<br><br/>
+cn:AutoAccess9 Auto9<br><br/>
+company:Woolworths Group<br><br/>
+createTimeStamp:20190711122023.0Z<br><br/>
+displayName:AutoAccess9 Auto9<br><br/>
+distinguishedName:CN=AutoAccess9 Auto9,OU=Users,OU=Support Office,OU=H3794_UAT_Accounts,OU=Accounts,DC=bigwcorp,DC=com,DC=au<br><br/>
+employeeID:AAR9<br><br/>
+employeeType:Salaried<br><br/>
+givenName:AutoAccess9<br><br/>
+l:Bella Vista<br><br/>
+modifyTimeStamp:20190711125756.0Z<br><br/>
+msDS-PrincipalName:BIGWCORP\AAR9<br><br/>
+msNPAllowDialin:Not Set<br><br/>
+objectClass:organizationalPerson
+person
+top
+user<br><br/>
+objectSid:S-1-5-21-2539278010-336267680-1371293232-47139<br><br/>
+objectType:user<br><br/>
+objectguid:{1a7bd9b5-9d50-4e6e-b074-7adb7385a6be}<br><br/>
+postalCode:2153<br><br/>
+pwdLastSet:132073212346059728<br><br/>
+sAMAccountName:AAR9<br><br/>
+sn:Auto9<br><br/>
+st:NSW<br><br/>
+street:SyncToAzureAD<br><br/>
+streetAddress:1 Woolworths Way<br><br/>
+title:Pricing Coordinator<br><br/>
+userAccountControl:512<br><br/>
+userPrincipalName:aauto9@test.bigw.com.au<br><br/>
+-----------------------------------------------------------------<br><br/>
+Google Apps<br><br/>
+-----------------------------------------------------------------<br><br/>
+addresses:{"type":"work","primary":true}<br><br/>
+changePasswordAtNextLogin:true<br><br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br><br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br><br/>
+customSchemas.IIQ_Test.entid:AA19510744377<br><br/>
+customSchemas.IIQ_Test.entlogonid:WAAR9<br><br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:0000000672<br><br/>
+customSchemas.WOWCustomSchema.ADID:WAAR9<br><br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:AAR9<br><br/>
+customSchemas.WOWCustomSchema.SAPID:AAR9<br><br/>
+customerId:C032u2mae<br><br/>
+emails:{"address":"aauto9@test.bigw.com.au","primary":true}<br><br/>
+externalIds:{"value":"AAR9","type":"organization"}<br><br/>
+familyName:Auto9<br><br/>
+fullName:AutoAccess9 Auto9<br><br/>
+givenName:AutoAccess9<br><br/>
+includeInGlobalAddressList:true<br><br/>
+ipWhitelisted:false<br><br/>
+isAdmin:false<br><br/>
+isDelegatedAdmin:false<br><br/>
+isMailboxSetup:true<br><br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br><br/>
+name:{"familyName":"Auto9","givenName":"AutoAccess9"}<br><br/>
+objectID:113758245658705321922<br><br/>
+orgUnitPath:/BigW/CorePlus<br><br/>
+organizations:{"name":"Woolworths Group Limited","title":"Pricing Coordinator","primary":true,"customType":"work","department":"Big W","location":"Norwest","costCenter":"BIG W COMMERCIAL SUPPORT \u0026 ANALYTICS"}<br><br/>
+primaryEmail:aauto9@test.bigw.com.au<br><br/>
+suspended:false<br><br/>
+-----------------------------------------------------------------<br><br/>
+ServiceWoW<br><br/>
+-----------------------------------------------------------------<br><br/>
+AccountAccess:Active<br><br/>
+active:true<br><br/>
+calendar_integration:Outlook<br><br/>
+department:BIG W<br><br/>
+email:aauto9@test.bigw.com.au<br><br/>
+employee_number:AAR9<br><br/>
+first_name:AutoAccess9<br><br/>
+last_name:Auto9<br><br/>
+locked_out:false<br><br/>
+name:AutoAccess9 Auto9<br><br/>
+notification:Enable<br><br/>
+password_needs_reset:false<br><br/>
+source:Sailpoint<br><br/>
+sys_class_name:User<br><br/>
+sys_created_by:upa.provisioning<br><br/>
+sys_created_on:11-07-2019 10:20 PM<br><br/>
+sys_domain:global<br><br/>
+sys_id:48c68682db26b7401d21481505961945<br><br/>
+sys_mod_count:0<br><br/>
+sys_updated_by:upa.provisioning<br><br/>
+sys_updated_on:11-07-2019 10:20 PM<br><br/>
+title:Pricing Coordinator<br><br/>
+u_enterprise_identity_id:AA19510744377<br><br/>
+u_enterprise_logon_id:WAAR9<br><br/>
+u_start_date:09-07-2019<br><br/>
+u_type:Employee<br><br/>
+vip:false<br><br/>
+-----------------------------------------------------------------<br><br/>
+SuccessFactors<br><br/>
+-----------------------------------------------------------------<br><br/>
+Employee Status:Active<br><br/>
+employmentNav.firstDateWorked:2019-07-09 10:00:00<br><br/>
+employmentNav.jobInfoNav.businessUnitNav.externalCode:17000226<br><br/>
+employmentNav.jobInfoNav.businessUnitNav.name:Big W<br><br/>
+employmentNav.jobInfoNav.company:1000<br><br/>
+employmentNav.jobInfoNav.companyNav.name:Woolworths Group Limited<br><br/>
+employmentNav.jobInfoNav.costCenterNav.externalCode:0000000672<br><br/>
+employmentNav.jobInfoNav.costCenterNav.name:BIG W COMMERCIAL SUPPORT & ANALYTICS<br><br/>
+employmentNav.jobInfoNav.customString4Nav.externalCode:10000000<br><br/>
+employmentNav.jobInfoNav.customString4Nav.externalName:General Merchandise<br><br/>
+employmentNav.jobInfoNav.customString5Nav.externalCode:13000047<br><br/>
+employmentNav.jobInfoNav.customString5Nav.externalName:Big W<br><br/>
+employmentNav.jobInfoNav.customString9Nav.externalCode:2337<br><br/>
+employmentNav.jobInfoNav.customString9Nav.externalName:Norwest<br><br/>
+employmentNav.jobInfoNav.department:20000594<br><br/>
+employmentNav.jobInfoNav.departmentNav.name:Big W<br><br/>
+employmentNav.jobInfoNav.division:11000000<br><br/>
+employmentNav.jobInfoNav.divisionNav.name:Big W<br><br/>
+employmentNav.jobInfoNav.emplStatusNav.externalCode:A<br><br/>
+employmentNav.jobInfoNav.employeeClassNav.picklistLabels.label:Full-Time<br><br/>
+employmentNav.jobInfoNav.employmentTypeNav.picklistLabels.label:Salaried<br><br/>
+employmentNav.jobInfoNav.position:40889132<br><br/>
+employmentNav.jobInfoNav.positionNav.cust_payingDepartmentNav.externalCode:403<br><br/>
+employmentNav.jobInfoNav.positionNav.cust_payingDepartmentNav.externalName:SUPPORT<br><br/>
+employmentNav.jobInfoNav.positionNav.externalName_defaultValue:Pricing Coordinator<br><br/>
+employmentNav.personNav.personalInfoNav.salutationNav.picklistLabels.label:Mr<br><br/>
+payGroup:Q2<br><br/>
+payGroupNav.name:AU Fortnightly M-S<br><br/>
+userId:AAR9<br><br/>
+userNav.empId:AAR9<br><br/>
+userNav.firstName:AutoAccess9<br><br/>
+userNav.lastName:Auto9<br><br/>
+userNav.manager.userId:268370<br><br/>
+userNav.status:t<br><br/>
+</div>
+</td>
+<td></td>
+<td>77</td>
+<td>com.upasailpoint.testcase.IdentityVerify@725bef66</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: AAR10, AAR10, SuccessFactors<br/>
+<a href="#Output-985032587" onClick='toggleBox("Output-985032587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-985032587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-985032587">
+UserID: AAR10<br><br/>
+------------------<br><br/>
+-----------------------------------------------------------------<br><br/>
+Google Apps<br><br/>
+-----------------------------------------------------------------<br><br/>
+addresses:{"type":"work","primary":true}<br><br/>
+changePasswordAtNextLogin:true<br><br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br><br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br><br/>
+customSchemas.IIQ_Test.entid:AA96868315705<br><br/>
+customSchemas.IIQ_Test.entlogonid:WAAR10<br><br/>
+customSchemas.SSO_Attributes.Primary_Store_ID:H001<br><br/>
+customSchemas.WOWCustomSchema.ADID:WAAR10<br><br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:AAR10<br><br/>
+customSchemas.WOWCustomSchema.SAPID:AAR10<br><br/>
+customerId:C032u2mae<br><br/>
+emails:{"address":"aauto10@test.woolworths.com.au","primary":true}<br><br/>
+externalIds:{"value":"AAR10","type":"organization"}<br><br/>
+familyName:Auto10<br><br/>
+fullName:AutoAccess10 Auto10<br><br/>
+givenName:AutoAccess10<br><br/>
+includeInGlobalAddressList:true<br><br/>
+ipWhitelisted:false<br><br/>
+isAdmin:false<br><br/>
+isDelegatedAdmin:false<br><br/>
+isMailboxSetup:true<br><br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br><br/>
+name:{"familyName":"Auto10","givenName":"AutoAccess10"}<br><br/>
+objectID:107626593702301583393<br><br/>
+orgUnitPath:/Woolworths/CorePlus<br><br/>
+organizations:{"name":"Hilton Foods Australia","title":"Quality Assurance Officer","primary":true,"customType":"work","department":"Meat Co","location":"Mulgrave","costCenter":"Hilton Foods Australia Truganina"}<br><br/>
+primaryEmail:aauto10@test.woolworths.com.au<br><br/>
+suspended:false<br><br/>
+-----------------------------------------------------------------<br><br/>
+ServiceWoW<br><br/>
+-----------------------------------------------------------------<br><br/>
+AccountAccess:Active<br><br/>
+active:true<br><br/>
+calendar_integration:Outlook<br><br/>
+email:aauto10@test.woolworths.com.au<br><br/>
+employee_number:AAR10<br><br/>
+first_name:AutoAccess10<br><br/>
+last_name:Auto10<br><br/>
+locked_out:false<br><br/>
+name:AutoAccess10 Auto10<br><br/>
+notification:Enable<br><br/>
+password_needs_reset:false<br><br/>
+source:Sailpoint<br><br/>
+sys_class_name:User<br><br/>
+sys_created_by:upa.provisioning<br><br/>
+sys_created_on:12-07-2019 10:31 AM<br><br/>
+sys_domain:global<br><br/>
+sys_id:4b0eecdedba6f7401d214815059619ad<br><br/>
+sys_mod_count:0<br><br/>
+sys_updated_by:upa.provisioning<br><br/>
+sys_updated_on:12-07-2019 10:31 AM<br><br/>
+title:Quality Assurance Officer<br><br/>
+u_enterprise_identity_id:AA96868315705<br><br/>
+u_enterprise_logon_id:WAAR10<br><br/>
+u_start_date:09-07-2019<br><br/>
+u_type:Employee<br><br/>
+vip:false<br><br/>
+-----------------------------------------------------------------<br><br/>
+SuccessFactors<br><br/>
+-----------------------------------------------------------------<br><br/>
+Employee Status:Active<br><br/>
+employmentNav.firstDateWorked:2019-07-09 10:00:00<br><br/>
+employmentNav.jobInfoNav.businessUnitNav.externalCode:17000476<br><br/>
+employmentNav.jobInfoNav.businessUnitNav.name:Meat Manufacture<br><br/>
+employmentNav.jobInfoNav.company:9140<br><br/>
+employmentNav.jobInfoNav.companyNav.name:Hilton Foods Australia<br><br/>
+employmentNav.jobInfoNav.costCenterNav.externalCode:H001<br><br/>
+employmentNav.jobInfoNav.costCenterNav.name:Hilton Foods Australia Truganina<br><br/>
+employmentNav.jobInfoNav.customString4Nav.externalCode:10000010<br><br/>
+employmentNav.jobInfoNav.customString4Nav.externalName:Hilton Foods Australia<br><br/>
+employmentNav.jobInfoNav.customString5Nav.externalCode:13000113<br><br/>
+employmentNav.jobInfoNav.customString5Nav.externalName:Meat Co - Support<br><br/>
+employmentNav.jobInfoNav.customString9Nav.externalCode:1842<br><br/>
+employmentNav.jobInfoNav.customString9Nav.externalName:Mulgrave<br><br/>
+employmentNav.jobInfoNav.department:20001666<br><br/>
+employmentNav.jobInfoNav.departmentNav.name:Truganina<br><br/>
+employmentNav.jobInfoNav.division:11000064<br><br/>
+employmentNav.jobInfoNav.divisionNav.name:Meat Co<br><br/>
+employmentNav.jobInfoNav.emplStatusNav.externalCode:A<br><br/>
+employmentNav.jobInfoNav.employeeClassNav.picklistLabels.label:Full-Time<br><br/>
+employmentNav.jobInfoNav.employmentTypeNav.picklistLabels.label:Salaried<br><br/>
+employmentNav.jobInfoNav.position:40886009<br><br/>
+employmentNav.jobInfoNav.positionNav.cust_payingDepartmentNav.externalCode:684<br><br/>
+employmentNav.jobInfoNav.positionNav.cust_payingDepartmentNav.externalName:Quality Control<br><br/>
+employmentNav.jobInfoNav.positionNav.externalName_defaultValue:Quality Assurance Officer<br><br/>
+employmentNav.personNav.personalInfoNav.salutationNav.picklistLabels.label:Mrs<br><br/>
+payGroup:Q2<br><br/>
+payGroupNav.name:AU Fortnightly M-S<br><br/>
+userId:AAR10<br><br/>
+userNav.empId:AAR10<br><br/>
+userNav.firstName:AutoAccess10<br><br/>
+userNav.lastName:Auto10<br><br/>
+userNav.manager.userId:268370<br><br/>
+userNav.status:t<br><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>com.upasailpoint.testcase.IdentityVerify@725bef66</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: A888XU16, A888XU16, ALH<br/>
+<a href="#Output-23218037" onClick='toggleBox("Output-23218037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-23218037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-23218037">
+UserID: A888XU16<br><br/>
+------------------<br><br/>
+-----------------------------------------------------------------<br><br/>
+ALH<br><br/>
+-----------------------------------------------------------------<br><br/>
+Area:Dan Murphy's - NSW - Area 2<br><br/>
+Area_ID:20000173<br><br/>
+Career Group:Retail Operations<br><br/>
+Career Level:Team Member (1001)<br><br/>
+Career Stream:Retail - Operations<br><br/>
+Country:Australia<br><br/>
+Default Locale:en_GB<br><br/>
+Division:Dan Murphy's<br><br/>
+Division_ID:11000004<br><br/>
+Employee Id:A888XU16<br><br/>
+Employment Type:EBA/Wage<br><br/>
+FT/PT Casual:Full-Time - Non EC<br><br/>
+First Name:DlhadFN816<br><br/>
+Hire Date:2020-10-08 00:00:00<br><br/>
+Human Resource:NO_HR<br><br/>
+Job Code:Team Member (30001802)<br><br/>
+Last Name:BlhswowLN816<br><br/>
+Line Manager:false<br><br/>
+Location:Austral Mackay (2152)<br><br/>
+Location State:NSW<br><br/>
+Manager:595370<br><br/>
+Middle Name:AlhgleMN816<br><br/>
+Ops/Sup:Dan Murphy's - Store Operations<br><br/>
+Ops/Sup_ID:13000009<br><br/>
+Paying Department:156<br><br/>
+Region:Dan Murphy's - QLD<br><br/>
+Region_ID:17000076<br><br/>
+STATUS:Active<br><br/>
+State:NSW<br><br/>
+Store:Gepps Cross DM (ALH)<br><br/>
+Store_ID:5204<br><br/>
+Time Zone:Australia/Sydney<br><br/>
+Title:DM Duty Manager<br><br/>
+Title_ID:P11691<br><br/>
+USERID:A888XU16<br><br/>
+Username:A888XU16<br><br/>
+in EC:2<br><br/>
+-----------------------------------------------------------------<br><br/>
+ServiceWoW<br><br/>
+-----------------------------------------------------------------<br><br/>
+AccountAccess:Active<br><br/>
+active:true<br><br/>
+calendar_integration:Outlook<br><br/>
+company:ALH<br><br/>
+email:dblhswowln816@test.woolworths.com.au<br><br/>
+employee_number:A888XU16<br><br/>
+first_name:DlhadFN816<br><br/>
+last_name:BlhswowLN816<br><br/>
+locked_out:false<br><br/>
+manager:HkadFN40 HkswowLN40<br><br/>
+name:DlhadFN816 BlhswowLN816<br><br/>
+notification:Enable<br><br/>
+password_needs_reset:false<br><br/>
+source:Sailpoint<br><br/>
+sys_class_name:User<br><br/>
+sys_created_by:upa.provisioning<br><br/>
+sys_created_on:11-07-2019 10:26 PM<br><br/>
+sys_domain:global<br><br/>
+sys_id:e42842cadb6e33406f26cae43a96193d<br><br/>
+sys_mod_count:0<br><br/>
+sys_updated_by:upa.provisioning<br><br/>
+sys_updated_on:11-07-2019 10:26 PM<br><br/>
+title:DM Duty Manager<br><br/>
+u_enterprise_identity_id:DB14389126144<br><br/>
+u_enterprise_logon_id:A888XU16<br><br/>
+u_start_date:08-10-2020<br><br/>
+u_type:Employee<br><br/>
+vip:false<br><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>com.upasailpoint.testcase.IdentityVerify@725bef66</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: H999XU86, H999XU86, HK<br/>
+<a href="#Output-1759694910" onClick='toggleBox("Output-1759694910", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1759694910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1759694910">
+UserID: H999XU86<br><br/>
+------------------<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+cn:DFF#$% %^&SDF<br><br/>
+createTimeStamp:20190712015353.0Z<br><br/>
+description:Google Email Forward<br><br/>
+displayName:DFF#$% %^&SDF - Google<br><br/>
+distinguishedName:CN=DFF\#$% %^&SDF,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br><br/>
+externalEmailAddress:d%^&sdf.test.woolworths.com.au@gapps2.woolworths.com.au<br><br/>
+givenName:DFF#$%<br><br/>
+mail:d%^&sdf@test.woolworths.com.au<br><br/>
+modifyTimeStamp:20190712015353.0Z<br><br/>
+objectClass:contact
+organizationalPerson
+person
+top<br><br/>
+objectType:contact<br><br/>
+objectguid:{3c84a6f6-62e3-4a40-a9cc-d71dc6c2f0ee}<br><br/>
+sn:%^&SDF<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+accountExpires:never<br><br/>
+accountFlags:Normal User Account<br><br/>
+cn:DFF#$% %^&SDF<br><br/>
+company:Woolworths Group<br><br/>
+createTimeStamp:20190712015351.0Z<br><br/>
+displayName:DFF#$% %^&SDF<br><br/>
+distinguishedName:CN=DFF\#$% %^&SDF,OU=Staging_New Accounts,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br><br/>
+employeeID:H999XU86<br><br/>
+employeeType:Salaried<br><br/>
+givenName:DFF#$%<br><br/>
+l:Kowloon<br><br/>
+modifyTimeStamp:20190712015352.0Z<br><br/>
+msDS-PrincipalName:NSWRO\H999XU86<br><br/>
+msNPAllowDialin:Not Set<br><br/>
+objectClass:organizationalPerson
+person
+top
+user<br><br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344846<br><br/>
+objectType:user<br><br/>
+objectguid:{1b0cfab5-ed08-43ab-9822-3e71d15b3c3d}<br><br/>
+pwdLastSet:132073700317657623<br><br/>
+sAMAccountName:H999XU86<br><br/>
+sn:%^&SDF<br><br/>
+st:Hong Kong<br><br/>
+street:SyncToAzureAD<br><br/>
+streetAddress:5th Floor, D2 place, 9 Cheung Yee Street, Lai Chi Kok<br><br/>
+title:Executive Assistant<br><br/>
+userAccountControl:512<br><br/>
+userPrincipalName:d%^&sdf@test.woolworths.com.au<br><br/>
+-----------------------------------------------------------------<br><br/>
+HK HR<br><br/>
+-----------------------------------------------------------------<br><br/>
+Area:Hong Kong Procurement<br><br/>
+Area_ID:20000264<br><br/>
+Country:China<br><br/>
+Customizable Field 12:IT<br><br/>
+Default Locale:en_GB<br><br/>
+Division:Meatco<br><br/>
+Division_ID:11000064<br><br/>
+Email:upauat@woolworths.com.au<br><br/>
+Employee Id:H999XU86<br><br/>
+Employment Type:Salaried<br><br/>
+FT/PT Casual:Part-Time<br><br/>
+First Name:DFF#$%<br><br/>
+Gender:F<br><br/>
+Grade:Team Member<br><br/>
+Hire Date:2019-12-07 00:00:00<br><br/>
+Human Resource:1012298<br><br/>
+Job Code:WOW Employee (9999999999)<br><br/>
+Last Name:%^&SDF<br><br/>
+Line Manager:false<br><br/>
+Manager:595370<br><br/>
+Matrix Manager:4<br><br/>
+Middle Name:HkadMN86<br><br/>
+Position Id:Product Development<br><br/>
+STATUS:Active<br><br/>
+Store / Site / Department:HK - Home Appliances<br><br/>
+Time Zone:Asia/Bangkok<br><br/>
+Title:Executive Assistant<br><br/>
+USERID:H999XU86<br><br/>
+Username:H999XU86<br><br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.upasailpoint.testcase.IdentityVerify@725bef66</td></tr>
+<tr>
+<td title='com.upasailpoint.testcase.IdentityVerify.verifyTheData()'><b>verifyTheData</b><br>Test class: com.upasailpoint.testcase.IdentityVerify<br>Parameters: H888XU76, H888XU76, HK<br/>
+<a href="#Output-893060889" onClick='toggleBox("Output-893060889", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893060889" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893060889">
+UserID: H888XU76<br><br/>
+------------------<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+cn:HkadFN76 HkswowLN76<br><br/>
+createTimeStamp:20190712015856.0Z<br><br/>
+description:Google Email Forward<br><br/>
+displayName:HkadFN76 HkswowLN76 - Google<br><br/>
+distinguishedName:CN=HkadFN76 HkswowLN76,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br><br/>
+externalEmailAddress:hhkswowln76.test.woolworths.com.au@gapps2.woolworths.com.au<br><br/>
+givenName:HkadFN76<br><br/>
+mail:hhkswowln76@test.woolworths.com.au<br><br/>
+modifyTimeStamp:20190712015856.0Z<br><br/>
+objectClass:contact
+organizationalPerson
+person
+top<br><br/>
+objectType:contact<br><br/>
+objectguid:{55561fd8-4384-43b5-9547-14484f2bcfbd}<br><br/>
+sn:HkswowLN76<br><br/>
+-----------------------------------------------------------------<br><br/>
+Active Directory - CORP.DIR Forest<br><br/>
+-----------------------------------------------------------------<br><br/>
+accountExpires:never<br><br/>
+accountFlags:Normal User Account<br><br/>
+cn:HkadFN76 HkswowLN76<br><br/>
+company:Woolworths Group<br><br/>
+createTimeStamp:20190712015855.0Z<br><br/>
+displayName:HkadFN76 HkswowLN76<br><br/>
+distinguishedName:CN=HkadFN76 HkswowLN76,OU=General,OU=Accounts,OU=H3794_UAT_Accounts,OU=Accounts,DC=woolworths,DC=com,DC=au<br><br/>
+employeeID:H999XU76<br><br/>
+employeeType:Salaried<br><br/>
+givenName:HkadFN76<br><br/>
+l:Kowloon<br><br/>
+modifyTimeStamp:20190712015855.0Z<br><br/>
+msDS-PrincipalName:NSWRO\H999XU76<br><br/>
+msNPAllowDialin:Not Set<br><br/>
+objectClass:organizationalPerson
+person
+top
+user<br><br/>
+objectSid:S-1-5-21-1839360793-518795572-315576832-344847<br><br/>
+objectType:user<br><br/>
+objectguid:{6bae2b95-b413-4221-94e7-4e1b600bde4c}<br><br/>
+pwdLastSet:132073703354491738<br><br/>
+sAMAccountName:H999XU76<br><br/>
+sn:HkswowLN76<br><br/>
+st:Hong Kong<br><br/>
+street:SyncToAzureAD<br><br/>
+streetAddress:5th Floor, D2 place, 9 Cheung Yee Street, Lai Chi Kok<br><br/>
+title:Contract Quality Coordinator<br><br/>
+userAccountControl:512<br><br/>
+userPrincipalName:hhkswowln76@test.woolworths.com.au<br><br/>
+-----------------------------------------------------------------<br><br/>
+Google Apps<br><br/>
+-----------------------------------------------------------------<br><br/>
+addresses:{"type":"work","country":"Hong Kong","primary":true}<br><br/>
+changePasswordAtNextLogin:true<br><br/>
+customSchemas.IIQ_Test.eimIdentitySubType:Employee<br><br/>
+customSchemas.IIQ_Test.eimIdentityType:Enterprise Identity<br><br/>
+customSchemas.IIQ_Test.entid:HH26777587174<br><br/>
+customSchemas.IIQ_Test.entlogonid:H888XU76<br><br/>
+customSchemas.WOWCustomSchema.ADID:H888XU76<br><br/>
+customSchemas.WOWCustomSchema.EmployeeNumber:H999XU76<br><br/>
+customSchemas.WOWCustomSchema.SAPID:H999XU76<br><br/>
+customerId:C032u2mae<br><br/>
+emails:{"address":"hhkswowln76@test.woolworths.com.au","primary":true}<br><br/>
+externalIds:{"value":"H999XU76","type":"organization"}<br><br/>
+familyName:HkswowLN76<br><br/>
+fullName:HkadFN76 HkswowLN76<br><br/>
+givenName:HkadFN76<br><br/>
+includeInGlobalAddressList:true<br><br/>
+ipWhitelisted:false<br><br/>
+isAdmin:false<br><br/>
+isDelegatedAdmin:false<br><br/>
+isMailboxSetup:true<br><br/>
+lastLoginTime:1970-01-01T00:00:00.000Z<br><br/>
+name:{"familyName":"HkswowLN76","givenName":"HkadFN76"}<br><br/>
+objectID:116919411855398203076<br><br/>
+orgUnitPath:/Woolworths/CorePlus<br><br/>
+organizations:{"name":"HK","title":"Contract Quality Coordinator","primary":true,"customType":"work","department":"Woolworths Limited","location":"Support Location QLD - Eight Mile Plains"}<br><br/>
+primaryEmail:hhkswowln76@test.woolworths.com.au<br><br/>
+suspended:false<br><br/>
+-----------------------------------------------------------------<br><br/>
+HK HR<br><br/>
+-----------------------------------------------------------------<br><br/>
+Area:Hong Kong Procurement<br><br/>
+Area_ID:20000264<br><br/>
+Country:Hong Kong<br><br/>
+Customizable Field 12:Customizable Field 12<br><br/>
+Default Locale:en_GB<br><br/>
+Division:Woolworths Limited<br><br/>
+Division_ID:11000019<br><br/>
+Email:TestHK7@gmail.com<br><br/>
+Employee Id:H999XU76<br><br/>
+Employment Type:Salaried<br><br/>
+FT/PT Casual:Part-Time<br><br/>
+First Name:HkadFN76<br><br/>
+Gender:F<br><br/>
+Grade:Manager<br><br/>
+Hire Date:2020-01-07 00:00:00<br><br/>
+Human Resource:1012298<br><br/>
+Job Code:WOW Employee (9999999999)<br><br/>
+Last Name:HkswowLN76<br><br/>
+Line Manager:false<br><br/>
+Manager:595370<br><br/>
+Matrix Manager:4<br><br/>
+Middle Name:HkadMN76<br><br/>
+Position Id:Business Partner<br><br/>
+STATUS:Active<br><br/>
+Store / Site / Department:Support Location QLD - Eight Mile Plains<br><br/>
+Time Zone:Asia/Shanghai<br><br/>
+Title:Contract Quality Coordinator<br><br/>
+USERID:H888XU76<br><br/>
+Username:H888XU76<br><br/>
+-----------------------------------------------------------------<br><br/>
+ServiceWoW<br><br/>
+-----------------------------------------------------------------<br><br/>
+AccountAccess:Active<br><br/>
+active:true<br><br/>
+calendar_integration:Outlook<br><br/>
+email:hhkswowln76@test.woolworths.com.au<br><br/>
+employee_number:H999XU76<br><br/>
+first_name:HkadFN76<br><br/>
+last_name:HkswowLN76<br><br/>
+locked_out:false<br><br/>
+manager:HkadFN40 HkswowLN40<br><br/>
+name:HkadFN76 HkswowLN76<br><br/>
+notification:Enable<br><br/>
+password_needs_reset:false<br><br/>
+source:Sailpoint<br><br/>
+sys_class_name:User<br><br/>
+sys_created_by:upa.provisioning<br><br/>
+sys_created_on:12-07-2019 11:59 AM<br><br/>
+sys_domain:global<br><br/>
+sys_id:9b024116db2af7401d2148150596198c<br><br/>
+sys_mod_count:0<br><br/>
+sys_updated_by:upa.provisioning<br><br/>
+sys_updated_on:12-07-2019 11:59 AM<br><br/>
+title:Contract Quality Coordinator<br><br/>
+u_enterprise_identity_id:HH26777587174<br><br/>
+u_enterprise_logon_id:H888XU76<br><br/>
+u_start_date:07-01-2020<br><br/>
+u_type:Employee<br><br/>
+vip:false<br><br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.upasailpoint.testcase.IdentityVerify@725bef66</td></tr>
+</table><p>
+</body>
+</html>
